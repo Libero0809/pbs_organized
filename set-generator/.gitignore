@@ -1,0 +1,7 @@
+.idea
+.vscode
+
+
+# ignore resulting files (since they are usually quite large)
+sets_*.txt
+

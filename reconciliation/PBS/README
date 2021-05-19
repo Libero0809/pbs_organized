@@ -1,0 +1,2 @@
+Need xxhash and minisketch to compile
+std=c++11

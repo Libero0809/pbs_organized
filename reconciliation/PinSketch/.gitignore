@@ -1,0 +1,5 @@
+perf
+build*
+cmake-*
+.idea
+OLD
