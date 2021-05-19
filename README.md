@@ -19,4 +19,7 @@ chmod +x ./install_dependencies.sh && ./install_dependencies.sh
 
 ## Compile & Usage
 
-Please refer to each of the three subfolders.
+Please refer to each of the three subfolders in this order: 
+1. set-generator
+2. estimators
+3. reconciliation

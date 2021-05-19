@@ -98,7 +98,7 @@ scripts: $(BUILD)/pbs_experiments_diffs.sh $(BUILD)/pbs_experiments_vs_graphene_
 
 params:
 	@echo "Generating Parameters"
-	(cd $(TOP) && parameter_calc.py)
+	(cd $(TOP) && ./parameter_calc.py)
 
 perf: $(BUILD)/pbs_perf scripts params
 	@echo "Benchmarking PBS ..."
@@ -120,4 +120,4 @@ consistency_test: $(BUILD)/pbs_perf_py_seeds
 clean:
 	$(RM) $(BUILD)
 
-.PHONY: clean test perf script
+.PHONY: clean test perf script params

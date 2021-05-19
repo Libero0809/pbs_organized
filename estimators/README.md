@@ -19,4 +19,4 @@ make
 Usage: tow_estimator -d DIFFSIZE -s DIFFSTART -n NUMSKETCH [-S SEED]
 ```
 
-An example is provided in *[experiment.sh](./experiment.sh)*.
+An example is provided in *[experiment128.sh](./experiment128.sh)*.

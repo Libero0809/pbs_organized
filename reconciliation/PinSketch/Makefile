@@ -69,7 +69,7 @@ consistency_test: $(BUILD)/erlay_perf $(BUILD)/erlay_wp_perf
 params:
 	(cd $(TOP)/../PBS && make params)
 
-perf: $(BUILD)/pinsketch_experiments_diffs.sh $(BUILD)/pinsketch_wp_experiments_diffs.sh params
+perf: scripts params
 	@echo "Benchmarking ..."
 	(cd $(BUILD) && ./pinsketch_wp_experiments_diffs.sh)
 	(cd $(BUILD) && ./pinsketch_experiments_diffs.sh)
