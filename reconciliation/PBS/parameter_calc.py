@@ -114,7 +114,11 @@ def calc_prob_fail_upperbound(
         prob_tail -= prob
 
     prob_fail += prob_tail
+    if prob_fail >= 1:
+        return 1.0
     prob_fail_upperbound = 2 * (1 - (1 - prob_fail) ** n_groups)
+    if prob_fail_upperbound >= 1:
+        return 1.0
     return prob_fail_upperbound
 
 
