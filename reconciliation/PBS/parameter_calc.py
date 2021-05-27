@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import numpy as np
-from math import ceil, comb
+from math import ceil
 import os
 
 balls_into_bins_dict = {}
